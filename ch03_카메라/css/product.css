@@ -8,10 +8,10 @@
         display: flex;
       }
       .product-img {
-        width: 30%;        
+        width: 30%;
         /* border: 1px solid blue; */
         /* 이미지를 백그라운드이미지로 넣는 법 */
-        border-image: url("../image/camera.jpg");
+        background-image: url("../image/camera.jpg");
         background-size: cover;
         background-position: center;
         margin-right: 20px;
