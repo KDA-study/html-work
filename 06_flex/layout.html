@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        /* 화면의 전체 높이 */
+        height: 100vh;
+      }
+      .header {
+        height: 80px;
+        background-color: steelblue;
+      }
+      .display {
+        display: flex;
+        /* 위/아래 제외하고 나머지 다 가짐 */
+        flex: 1;
+      }
+      .nav {
+        /* grow, shrink, base-width */
+        /* 늘어나지도 줄어들지도 말고, 항상 150 */
+        flex: 0 0 150px;
+        background-color: lightsteelblue;
+      }
+      .main {
+        flex: 1;
+        background-color: whitesmoke;
+      }
+      .ad {
+        flex: 0 0 150px;
+        background-color: lightsteelblue;
+      }
+      .footer {
+        height: 60px;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"></div>
+      <div class="display">
+        <div class="nav"></div>
+        <div
+          class="main"
+          style="
+            column-count: 3;
+            column-width: 200px;
+            column-gap: 20px;
+            column-rule: 1px solid red;
+          ">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sed
+            temporibus provident, deleniti sequi vero iusto repellat esse ipsum
+            exercitationem facere nobis sunt non nesciunt libero fugit. Eos,
+            consequuntur quos! Numquam incidunt suscipit nemo atque voluptatibus
+            tempora, laudantium, temporibus dolor eos, non culpa? Architecto
+            similique expedita perspiciatis ad est quasi velit obcaecati
+            maiores, quod et cum, in exercitationem repellendus impedit.
+            Nesciunt qui, ratione quis enim sunt voluptate cumque! Corrupti,
+            numquam provident odit, autem inventore facilis tempora aliquam
+            adipisci quibusdam laudantium ex consectetur quasi necessitatibus
+            maxime est molestias, asperiores consequatur neque. Quam dicta
+            praesentium velit non sed commodi et minima, unde natus labore
+            itaque eum nemo! Molestias sint ratione eveniet tempora, unde
+            corporis vel aperiam, omnis officiis ipsa nemo repellendus maiores!
+            Iste officiis, laboriosam expedita magnam esse reprehenderit
+            exercitationem pariatur, natus alias atque dolores recusandae
+            mollitia provident amet fuga possimus! Pariatur accusantium saepe
+            eligendi fugit obcaecati numquam quidem! Ratione, deleniti quos.
+            Mollitia, vitae laudantium quas ullam officiis nulla in veniam
+            deserunt officia praesentium veritatis possimus assumenda voluptatum
+            consequatur necessitatibus itaque dolorum quo quis hic laborum culpa
+            nostrum adipisci cumque expedita. Esse. Aspernatur assumenda
+            maiores, ipsa tenetur expedita aliquid blanditiis quibusdam velit
+            labore quam dicta quo aut veniam. Minus facere aliquam excepturi
+            aliquid natus delectus et, fugit voluptate cumque vel beatae
+            numquam! Ea ipsa sint architecto ut asperiores maxime quo eos
+            inventore, nobis sapiente nostrum, minima optio provident! Quae
+            debitis iste exercitationem voluptatum labore, incidunt saepe culpa
+            non ipsam placeat eius reiciendis. Ut reprehenderit amet sint
+            blanditiis eius eaque veniam et sed placeat perspiciatis, quaerat
+            quos, pariatur magni nulla autem aut in dolore id facilis excepturi
+            tempora fugiat ratione odit repellat! Similique. Quam, tenetur aut.
+            Ut accusantium veritatis sequi delectus cum velit optio magni,
+            corrupti nesciunt reiciendis quia ipsa quam aut! Dolores unde
+            aperiam ab deleniti, quos repellendus optio velit fuga pariatur.
+          </p>
+        </div>
+        <div class="ad"></div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
